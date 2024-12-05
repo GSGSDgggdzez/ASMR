@@ -13,9 +13,6 @@ export default function ApplicationLogo(props: HTMLAttributes<HTMLDivElement>) {
                 {...props}
             />
         </div>
-        <div className="text-4xl font-black "> {/* Text styling */}
-            Relaxify
-        </div>
     </div>
     );
 }

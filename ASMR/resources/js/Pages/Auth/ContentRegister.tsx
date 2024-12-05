@@ -8,7 +8,7 @@ import { Head, Link, useForm } from '@inertiajs/react';
 import { FormEventHandler, useState } from 'react';
 import { HTMLAttributes } from 'react';
 
-export default function Register(props: HTMLAttributes<HTMLDivElement>) {
+export default function ContentRegister(props: HTMLAttributes<HTMLDivElement>) {
     const [showForm, setShowForm] = useState(false);
     const { data, setData, post, processing, errors, reset } = useForm({
         name: '',
@@ -21,9 +21,8 @@ export default function Register(props: HTMLAttributes<HTMLDivElement>) {
         e.preventDefault();
         post(route('register'));
     };
-
-    return (
-        <GuestLayout>
+  return (
+    <GuestLayout>
             <Head title="Register" />
 
             <form onSubmit={submit}>
@@ -140,5 +139,5 @@ export default function Register(props: HTMLAttributes<HTMLDivElement>) {
                 )}
             </form>
         </GuestLayout>
-    );
+  );
 }

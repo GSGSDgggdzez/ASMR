@@ -14,6 +14,16 @@ Route::get('/', function () {
     ]);
 });
 
+Route::get('/ContentRegister', function() {
+    return Inertia::render('Auth/ContentRegister');
+});
+
+Route::get('/choose', function() {
+    return Inertia::render('Auth/ChooseRegister');
+});
+
+
+
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');

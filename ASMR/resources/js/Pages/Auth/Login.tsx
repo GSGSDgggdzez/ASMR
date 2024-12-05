@@ -40,6 +40,9 @@ export default function Login({
 
             <form onSubmit={submit}>
                 <div>
+                    <PrimaryButton className='mt-1 block w-full'>Login With Google</PrimaryButton>
+                </div>
+                <div>
                     <InputLabel htmlFor="email" value="Email" />
 
                     <TextInput
